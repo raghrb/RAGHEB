@@ -1,0 +1,133 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: block;
+    margin-top: 50px;
+    border: 1px solid #ccc;
+    width: 25%;
+    height: 400px;
+    background-color: #0b0c2a;
+    padding: 50px;margin-left: 50px;
+    width: 700px;
+   
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgb(121, 116, 116);
+}
+.input {
+    margin-bottom: 30px;
+    text-align: center;
+    
+    
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  input[type="text"] {
+    width: 400px;
+    height: 50px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+   border-bottom: 2px solid black;
+
+  }
+  
+  /* Style supplémentaire pour le focus */
+  input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Style pour le placeholder */
+  input[type="text"]::placeholder {
+    color: #191818;
+  }
+  button{
+        width: 100px;
+        display: flex;
+        flex: 1;
+        padding: 5px;
+        font-size: 20px;
+        background-color: #019f55;
+        text-align: center;
+       
+        border-radius: 10px;
+        text-align: center;
+  }
+  .cont{
+    margin: 12%;
+    width: 90%;
+    max-width: 500px;
+    background-color: #0b0c2a;
+    height: 465px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 900px;
+    margin-top: -500px;
+    box-shadow: 5px 5px 5px  rgb(121, 116, 116);
+}
+.display{
+    width: 70%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 20px;
+    border-radius: 5px;
+    margin-left: 50px;
+}
+.cont h1{
+    font-weight: 500;
+    font-size: 45px;
+    color: #ccc;
+    margin-left: 50px;
+}
+.cont h1 span{
+    color:#019f55;
+    border-bottom: 4px solid ;
+    padding-bottom: 10px;
+}
+.display img{
+    width: 35px;
+    cursor: pointer;
+
+}
+.display .inp{
+    border: 0;
+    height: 35px;
+    width: 300px;
+    
+}
+
+
+.cont button{
+    height: 50px;
+    width: 200px;
+    border:0;
+    outline: none;
+    background: #019f55;
+    color:#fff;
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-left: 50px;
+
+}
+h1{
+  text-align: center;
+  font-size: 40px;
+}
+  
