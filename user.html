@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reglage</title>
+    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <h1>create new user</h1>
+    <div class="container">
+        <div class="input">
+            <label>Name</label>
+
+            <input type="text" id="name" >
+        </div>
+        <div class="input">
+            <label>email</label>
+
+            <input type="text" id="name" >
+        </div>
+        <div class="input">
+            <label>password</label>
+
+            <input type="text" id="name" >
+        </div>
+        
+        <div class="boutton">
+            <button> <span class="material-symbols-outlined">
+                add
+                </span> </button>
+        </div>
+           
+
+
+        
+    </div>
+    <div class="cont">
+        <h1>generate a <br><span> password</span></h1>
+        <div class="display">
+            <input class="inp" type="text" id="password" placeholder="password">
+            <img src="pas.png" onclick="copyPassword()">
+    
+        </div>
+        <button onclick="generatePassword()"> generate password</button>
+    </div>
+    <script>
+      function generatePassword() {
+            const length = 12;
+            const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            const lowerCase = "abcdefghijklmnopqrstuvwxyz";
+            const symbols = "@#$%^&*()-./:;<=>[]{}";
+
+            let password = "";
+
+            for (let i = 0; i < length; i++) {
+                const randomSet = Math.floor(Math.random() * 3); // Randomly select character set
+                if (randomSet === 0) {
+                    password += upperCase[Math.floor(Math.random() * upperCase.length)];
+                } else if (randomSet === 1) {
+                    password += lowerCase[Math.floor(Math.random() * lowerCase.length)];
+                } else {
+                    password += symbols[Math.floor(Math.random() * symbols.length)];
+                }
+            }
+
+            const passwordField = document.getElementById("password");
+            passwordField.value = password;
+        }
+        function copyPassword(){
+            const passwordField = document.getElementById("password");
+            passwordField.select();
+            document.execCommand("copy");
+        }
+    </script>
+    
+</body>
+</html>
